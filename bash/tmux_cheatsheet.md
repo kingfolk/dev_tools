@@ -17,8 +17,9 @@ ctrl-b: # also known as default prefix key
   %, split to right
   ", split to bottom
   x, kill current pane
-  &, kill current window # you can still restore it by 'tmux attach -t session_id'
-  d, detach current window
+  o, swap pane
+  &, kill current window 
+  d, detach current window # you can still restore it by 'tmux attach -t session_id'
        in normal terminal: tmux ls;(list all session). tmux attach -t [session name];(reattach session)
   up/down/left/right, move between panes
   Page Up: scroll inside current pane. enable copy mode
@@ -33,7 +34,6 @@ ctrl-b: # also known as default prefix key
   c, create a new window for current session. the previous window still is there.
   w, list all windows for current session
   n/p, switch window
-  &, close current window
   f, search for window
   r, reload configuration
 ```
